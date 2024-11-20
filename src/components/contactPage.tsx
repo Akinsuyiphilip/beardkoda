@@ -17,19 +17,23 @@ export default function ContactPage() {
   const slides = [
     {
       image: slide1,
-      text: "This is the first slide",
+      text: "View project",
+      href: "https://tender.cash",
     },
     {
       image: slide2,
-      text: "This is the second slide",
+      text: "View project",
+      href: "https://pakt.world",
     },
     {
       image: slide3,
-      text: "This is the third slide",
+      text: "View project",
+      href: "https://myaza.co",
     },
     {
       image: slide4,
-      text: "This is the fourth slide",
+      text: "View project",
+      href: "https://bitmama.io",
     },
   ];
 
@@ -69,10 +73,15 @@ export default function ContactPage() {
                 />
 
                 {/* Text Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-white text-lg px-4 py-2 rounded-md">
+                <div className="absolute bottom-[50px] left-[340px] flex items-center justify-center underline">
+                  <a
+                    href={slides[currentSlide].href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white text-lg px-4 py-2 rounded-md"
+                  >
                     {slides[currentSlide].text}
-                  </p>
+                  </a>
                 </div>
               </div>
               <div className="flex justify-between absolute">
