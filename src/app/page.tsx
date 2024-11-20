@@ -23,7 +23,7 @@ import linkdenIcon from "../../public/linkdenIcon.svg";
 export default function Home() {
   return (
     <>
-      <div className="font-designio overflow-x-hidden w-screen">
+      <div className=" overflow-x-hidden w-screen">
         <div className="flex fixed text-[32px] bg-[#C4BBB6] h-16 p-0 m-0 w-full justify-start z-10">
           <h4 className=" font-designiobold text-[32px] ml-9 mt-7">
             Akinsuyi Joshua Akinyemi
