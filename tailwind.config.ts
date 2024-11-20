@@ -8,16 +8,11 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        designio: ["Designio", "sans-serif"],
-        designiobold: ["DesignioBold", "sans-serif"],
-        designiomedium: ["DesignioMedium", "sans-serif"],
-      },
-
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      // fontFamily: {
+      //   designio: ["Designio"],
+      //   designiobold: ["DesignioBold"],
+      //   designiomedium: ["DesignioMedium"],
+      // },
     },
   },
   plugins: [],

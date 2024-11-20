@@ -1,24 +1,14 @@
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
+import localFont from "next/font/local";
 import "./globals.css";
 
-// const designio = localFont({
-//   src: "./fonts/DesignioBold.woff",
-//   variable: "--font-designio",
-//   weight: "100 900",
-// });
-
-// const designioRegular = localFont({
-//   src: "./fonts/DesignioRegular.woff",
-//   variable: "--font-designio-regular",
-//   weight: "100 900",
-// });
-
-// const designioMedium = localFont({
-//   src: "./fonts/DesignioMedium.woff",
-//   variable: "--font-designio-medium",
-//   weight: "100 900",
-// });
+const designio = localFont({
+  src: [
+    { path: "./fonts/DesignioRegular.woff", weight: "400", style: "normal" },
+    { path: "./fonts/DesignioMedium.woff", weight: "400", style: "normal" },
+    { path: "./fonts/DesignioBold.woff", weight: "400", style: "normal" },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -32,11 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      // className={`${designio.variable} ${designioRegular.variable}  ${designioMedium.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={ designio.className}>{children}</body>
     </html>
   );
 }
