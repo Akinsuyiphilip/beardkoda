@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ designio.className}>{children}</body>
+      <body className={designio.className}>{children}</body>
     </html>
   );
 }
