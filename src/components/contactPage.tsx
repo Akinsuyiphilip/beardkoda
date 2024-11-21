@@ -60,7 +60,7 @@ export default function ContactPage() {
             infrastructure for growth, I’m committed to driving success.
           </p>
         </div>
-        <div className="flex space-x-24 my-10">
+        <div className="flex space-x-20 my-10">
           <div className=" ">
             <div className="flex flex-col justify-center items-center w-[800px] h-[435px] rounded-3xl relative">
               <div className="relative flex items-center w-full  h-full overflow-hidden mt-2">
@@ -69,7 +69,8 @@ export default function ContactPage() {
                   alt={`Slide ${currentSlide + 1}`}
                   layout="fill"
                   objectFit="contain"
-                  priority
+                  // priority
+                  loading="lazy"
                 />
 
                 {/* Text Overlay */}

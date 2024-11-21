@@ -1,5 +1,4 @@
 "use client";
-
 import ContactPage from "@/components/contactPage";
 import Homepage from "@/components/homePage";
 import SkillPage from "@/components/skillPage";
@@ -16,9 +15,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mx-32">
+        <div className="mx-[10%] w-[75%] flex flex-col justify-center">
           <div>
-            <Homepage />
+            <Homepage/>
             <SkillPage />
             <ContactPage />
           </div>

@@ -16,13 +16,17 @@ import phpIcon from "../../public/phpIcon.svg";
 export default function SkillPage() {
   return (
     <div>
-      <section className="mt-10">
+      <section className="h-[80vh] from-bottom-to-top">
         <div className="flex justify-between">
           <h2 className="text-[48px] text-[#000000] font-semibold">
             Skills and Services
           </h2>
 
-          <button className="flex justify-center items-center  rounded-full bg-[#A0918C] relative w-[280px] h-[46px] shadow-[3px_5px_0px_0px_rgba(0,0,0,0.40)]">
+          <a
+            href="/path/to/your-file.pdf"
+            download="MyFile.pdf"
+            className="flex justify-center items-center  rounded-full bg-[#A0918C] relative w-[280px] h-[46px] shadow-[3px_5px_0px_0px_rgba(0,0,0,0.40)]"
+          >
             <p className="font-designiomedium text-[20px] -ml-5">
               Download Resume
             </p>
@@ -33,7 +37,7 @@ export default function SkillPage() {
               alt="icon"
               className="absolute right-0"
             />
-          </button>
+          </a>
         </div>
         <div className="">
           <div className="flex justify-between mt-10">

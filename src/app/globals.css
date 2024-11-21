@@ -21,3 +21,75 @@ body {
   -ms-overflow-style: none; /* For IE and Edge */
   scrollbar-width: none; /* For Firefox */
 }
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fromLeftBottom {
+  from {
+    transform: translate(-100%, 100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromBottomTop {
+  from {
+    transform: translate(0,100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromBottomToTop {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.from-left-bottom {
+  animation: fromLeftBottom 1s ease-out forwards;
+}
+
+.from-bottom-top {
+  animation: fromRightTop 1s ease-out forwards;
+}
+
+.from-bottom-to-top {
+  animation: fromBottomToTop 1s ease-out forwards;
+}
+
+
+.slide-in {
+  animation: slideIn 1s ease-out forwards;
+}
+.slide-in1 {
+  animation: slideIn 1.1s ease-out forwards;
+}
+.slide-in2 {
+  animation: slideIn 1.3s ease-out forwards;
+}
+.slide-in3 {
+  animation: slideIn 1.5s ease-out forwards;
+}
+.slide-in4 {
+  animation: slideIn 1.7s ease-out forwards;
+}
