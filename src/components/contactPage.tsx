@@ -60,15 +60,16 @@ export default function ContactPage() {
             infrastructure for growth, I’m committed to driving success.
           </p>
         </div>
-        <div className="flex space-x-20 my-10">
+        <div className="flex sm-range:flex-col space-x-20 my-10 sm-range:items-start sm-range:space-x-0">
           <div className=" ">
-            <div className="flex flex-col justify-center items-center w-[800px] h-[435px] rounded-3xl relative">
+            <div className="flex flex-col justify-center items-center w-[800px] h-[435px] rounded-3xl relative sm-range:hidden">
               <div className="relative flex items-center w-full  h-full overflow-hidden mt-2">
                 <Image
                   src={slides[currentSlide].image}
                   alt={`Slide ${currentSlide + 1}`}
-                  layout="fill"
-                  objectFit="contain"
+                  className=" w-full contain-layout"
+                  // layout="fill"
+                  // objectFit="contain"
                   // priority
                   loading="lazy"
                 />

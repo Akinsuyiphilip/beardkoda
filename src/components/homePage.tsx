@@ -8,17 +8,17 @@ import skillIcon4 from "../../public/skillIcon4.svg";
 
 export default function Homepage() {
   return (
-    <div>
-      <section className="mt-44 from-bottom-to-top h-[80vh]">
-        <h1 className=" text-[90px] font-semibold leading-tight  ">
+    <div className="">
+      <section className="mt-44 from-bottom-to-top h-[80vh] sm-range:h-[90vh] sm-range:mt-24 ">
+        <h1 className=" text-[90px] font-semibold leading-tight sm-range:text-[75px] ">
           BeardKoda
         </h1>
-        <div className="w-full flex justify-between">
-          <div className="w-2/3 space-y-7">
-            <h3 className="text-[40px] font-thin -mt-5 w-[650px] leading-tight">
+        <div className="w-full flex justify-between sm-range:flex-col">
+          <div className="w-2/3 space-y-7 sm-range:w-full">
+            <h3 className="text-[40px] font-thin -mt-5 w-[650px] leading-tight sm-range:w-full sm-range:text-[24px] sm-range:leading-none sm-range:-mt-1">
               Site Reliability Engineer | DevOps Engineer | Software Engineer
             </h3>
-            <p className="text-[30px] text-[#000000] font-normal w-[703px] leading-tight ">
+            <p className="text-[30px] text-[#000000] font-normal w-[703px] leading-tight sm-range:text-[24px] sm-range:w-full sm-range:leading-tight">
               As Software and DevOps Engineer, I bring the best of both worlds:
               crafting robust, scalable software solutions while ensuring
               seamless deployment and operations. With a deep understanding of
@@ -26,7 +26,7 @@ export default function Homepage() {
               deliver high-quality products faster and more efficiently.
             </p>
           </div>
-          <div className="flex flex-col w-[300px] space-y-6 -mt-4">
+          <div className="flex flex-col w-[300px] space-y-6 -mt-4 sm-range:w-full sm-range:mt-8">
             <div className="font-semibold items-start space-y-2 ">
               <div className="flex space-x-3 text-start text-[24px] slide-in1">
                 <Image src={searchIcon} height={24} width={24} alt="icon" />
@@ -51,7 +51,7 @@ export default function Homepage() {
                 </p>
               </div>
             </div>
-            <div className="flex space-x-4 slide-in">
+            <div className="flex space-x-4 slide-in sm-range:space-x-8">
               <Image src={skillIcon1} height={48} width={48} alt="skillicon1" />
               <Image src={skillIcon2} height={48} width={48} alt="skillicon2" />
               <Image src={skillIcon3} height={48} width={48} alt="skillicon3" />

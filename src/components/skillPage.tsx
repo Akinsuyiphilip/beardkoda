@@ -16,16 +16,16 @@ import phpIcon from "../../public/phpIcon.svg";
 export default function SkillPage() {
   return (
     <div>
-      <section className="h-[80vh] from-bottom-to-top">
-        <div className="flex justify-between">
-          <h2 className="text-[48px] text-[#000000] font-semibold">
+      <section className="min-h-[80vh] from-bottom-to-top sm-range:h-fit">
+        <div className="flex justify-between sm-range:flex-col">
+          <h2 className="text-[48px] text-[#000000] font-semibold sm-range:text-[44px]">
             Skills and Services
           </h2>
 
           <a
             href="/path/to/your-file.pdf"
             download="MyFile.pdf"
-            className="flex justify-center items-center  rounded-full bg-[#A0918C] relative w-[280px] h-[46px] shadow-[3px_5px_0px_0px_rgba(0,0,0,0.40)]"
+            className="flex justify-center items-center  rounded-full bg-[#A0918C] relative w-[280px] h-[46px] shadow-[3px_5px_0px_0px_rgba(0,0,0,0.40)] sm-range:w-[250px]"
           >
             <p className="font-designiomedium text-[20px] -ml-5">
               Download Resume
@@ -40,8 +40,8 @@ export default function SkillPage() {
           </a>
         </div>
         <div className="">
-          <div className="flex justify-between mt-10">
-            <div className="w-[200px] h-[169px] bg-gradient-to-l from-[#B9AFA7] to-[#B5ABA2] rounded-3xl flex flex-col justify-center items-center shadow-[5px_1.5px_0px_0px_rgba(0,0,0,0.40)]">
+          <div className=" grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] sm-range:grid-cols-2 md-range:grid-cols-3 lg-range:grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-8 mt-24">
+            <div className=" h-[150px] bg-gradient-to-l from-[#B9AFA7] to-[#B5ABA2] rounded-3xl flex flex-col justify-center items-center shadow-[5px_1.5px_0px_0px_rgba(0,0,0,0.40)]">
               <Image
                 src={kubertIcon}
                 height={80}
@@ -53,7 +53,7 @@ export default function SkillPage() {
                 Kurbenates
               </p>
             </div>
-            <div className="w-[200px] h-[169px] bg-gradient-to-l from-[#B9AFA7] to-[#B5ABA2] rounded-3xl flex flex-col justify-center items-center shadow-[5px_1.5px_0px_0px_rgba(0,0,0,0.40)]">
+            <div className=" h-[150px] bg-gradient-to-l from-[#B9AFA7] to-[#B5ABA2] rounded-3xl flex flex-col justify-center items-center shadow-[5px_1.5px_0px_0px_rgba(0,0,0,0.40)]">
               <Image
                 src={dockerIcon}
                 height={80}
@@ -63,7 +63,7 @@ export default function SkillPage() {
               />
               <p className="text-[#2A231B] text-[32px] font-normal">Docker</p>
             </div>
-            <div className="w-[200px] h-[169px] bg-gradient-to-l from-[#B9AFA7] to-[#B5ABA2] rounded-3xl flex flex-col justify-center items-center shadow-[5px_1.5px_0px_0px_rgba(0,0,0,0.40)]">
+            <div className=" h-[150px] bg-gradient-to-l from-[#B9AFA7] to-[#B5ABA2] rounded-3xl flex flex-col justify-center items-center shadow-[5px_1.5px_0px_0px_rgba(0,0,0,0.40)]">
               <Image
                 src={awsIcon}
                 height={80}
@@ -73,7 +73,11 @@ export default function SkillPage() {
               />
               <p className="text-[#2A231B] text-[32px] font-normal">Aws</p>
             </div>
-            <div className="w-[200px] h-[169px] bg-gradient-to-l from-[#B9AFA7] to-[#B5ABA2] rounded-3xl flex flex-col justify-center items-center shadow-[5px_1.5px_0px_0px_rgba(0,0,0,0.40)]">
+            <div
+              className=" h-[150px] bg-gradient-to-l from-[#B9AFA7] to-[#B5ABA2] rounded-3xl flex flex-col justify-center items-center shadow-[5px_1.5px_0px_0px_rgba(0,0,0,0.40)]
+           
+            "
+            >
               <Image
                 src={golangIcon}
                 height={70}
@@ -83,7 +87,7 @@ export default function SkillPage() {
               />
               <p className="text-[#2A231B] text-[32px] font-normal">Golang</p>
             </div>
-            <div className="w-[200px] h-[169px] bg-gradient-to-l from-[#B9AFA7] to-[#B5ABA2] rounded-3xl flex flex-col justify-center items-center shadow-[5px_1.5px_0px_0px_rgba(0,0,0,0.40)]">
+            <div className=" h-[150px] bg-gradient-to-l from-[#B9AFA7] to-[#B5ABA2] rounded-3xl flex flex-col justify-center items-center shadow-[5px_1.5px_0px_0px_rgba(0,0,0,0.40)]">
               <Image
                 src={pythonIcon}
                 height={80}
@@ -95,7 +99,7 @@ export default function SkillPage() {
             </div>
           </div>
           <div className=" px-10 mt-24">
-            <div className="flex items-center min-h-fit space-x-8">
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] sm-range:grid-cols-2 md-range:grid-cols-3 lg-range:grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-8">
               <div className="flex flex-col justify-center items-center ">
                 <Image
                   src={nextjsIcon}
