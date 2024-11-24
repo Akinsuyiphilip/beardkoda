@@ -9,7 +9,7 @@ import skillIcon4 from "../../public/skillIcon4.svg";
 export default function Homepage() {
   return (
     <div className="">
-      <section className="mt-44 from-bottom-to-top h-[80vh] sm-range:h-[90vh] sm-range:mt-24 ">
+      <section className="mt-44 from-bottom-to-top min-h-[80vh] h-fit sm-range:min-h-[90vh] sm-range:h-fit sm-range:mt-24 ">
         <h1 className=" text-[90px] font-semibold leading-tight sm-range:text-[75px] ">
           BeardKoda
         </h1>
